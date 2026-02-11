@@ -1,51 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Loja Rosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Achadinhos | Afiliado Shopee</title>
     <style>
+        /* Estilização Geral */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff0f5;
-            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
+
         header {
-            background-color: pink;
+            background-color: #ee4d2d; /* Cor oficial Shopee */
+            color: white;
             padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        h1 {
-            color: #b03060;
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
         }
-        .produto {
-            border: 1px solid #ccc;
-            margin: 20px;
+
+        /* Grade de Produtos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card de Produto */
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
             padding: 15px;
-            display: inline-block;
-            width: 200px;
-            background-color: #ffffff;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .price {
+            color: #ee4d2d;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: block;
+            background-color: #ee4d2d;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #d73211;
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr); /* Dois por linha no celular */
+                gap: 10px;
+            }
+            .product-info { padding: 10px; }
+            .product-title { font-size: 14px; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🌸 Loja Rosa 🌸</h1>
-    <p>Moda simples e elegante</p>
+    <h1>🛍️ Meus Achadinhos Shopee</h1>
+    <p>As melhores ofertas selecionadas para você!</p>
 </header>
 
-<div class="produto">
-    <h2>Vestido Rosa</h2>
-    <p>R$ 99,90</p>
-</div>
-
-<div class="produto">
-    <h2>Blusa Branca</h2>
-    <p>R$ 49,90</p>
-</div>
-
-<div class="produto">
-    <h2>Calça Jeans</h2>
-    <p>R$ 119,90</p>
+<div class="container">
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 1">
+            <div class="product-info">
+                <div class="product-title">Fone de Ouvido Bluetooth Premium</div>
+                <div class="price">R$ 49,90</div>
+                <a href="SEU_LINK_AQUI" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 2">
+            <div class="product-info">
+                <div class="product-title">Umidificador de Ar Ultrassônico</div>
+                <div class="price">R$ 35,00</div>
+                <a href="SEU_LINK_AQUI" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+        </div>
 </div>
 
 </body>
