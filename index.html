@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Achadinhos | Afiliado Shopee</title>
+    <title>Achados e Aliados | Shopee e Mercado Livre</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -13,7 +13,7 @@
         }
 
         header {
-            background-color: #ee4d2d;
+            background: linear-gradient(135deg, #ee4d2d 0%, #3483fa 100%);
             color: white;
             padding: 25px 10px;
             text-align: center;
@@ -30,7 +30,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .product-card {
@@ -87,7 +87,7 @@
             font-size: 13px;
         }
 
-        /* --- SEÇÃO WHATSAPP NO FINAL --- */
+        /* --- NOVA SEÇÃO WHATSAPP --- */
         .help-section {
             background: white;
             padding: 30px;
@@ -96,11 +96,6 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             margin: 40px 0;
             border: 2px dashed #25d366;
-        }
-
-        .help-section h3 {
-            color: #333;
-            margin-bottom: 10px;
         }
 
         .whatsapp-btn-large {
@@ -112,16 +107,9 @@
             padding: 15px 25px;
             border-radius: 30px;
             font-weight: bold;
-            font-size: 16px;
             margin-top: 10px;
-            transition: background 0.3s;
         }
 
-        .whatsapp-btn-large:hover {
-            background-color: #128c7e;
-        }
-
-        /* --- BOTÃO FLUTUANTE --- */
         .whatsapp-fixed {
             position: fixed;
             bottom: 20px;
@@ -137,11 +125,6 @@
             text-decoration: none;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             z-index: 1000;
-            transition: transform 0.3s;
-        }
-
-        .whatsapp-fixed:hover {
-            transform: scale(1.1);
         }
 
         @media (max-width: 992px) {
@@ -150,18 +133,17 @@
 
         @media (max-width: 768px) {
             .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .whatsapp-btn-large { width: 90%; font-size: 14px; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🛍️ Meus Achadinhos Shopee</h1>
+    <h1>🤝 Achados e Aliados</h1>
     <p>As melhores promoções selecionadas por mim!</p>
 </header>
 
-<a href="https://wa.me/5511912830301?text=Oi!+Vi+seu+site+de+achadinhos+e+gostaria+de+ajuda+para+encontrar+um+produto." class="whatsapp-fixed" target="_blank" title="Me chame no WhatsApp">
+<a href="https://wa.me/5511912830301?text=Oi!+Não+encontrei+o+que+procurava,+pode+me+ajudar?" class="whatsapp-fixed" target="_blank">
     <span style="font-size: 30px;">💬</span>
 </a>
 
@@ -172,16 +154,79 @@
             <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhmmzlomujgh97.webp" alt="Jogo de Lençol">
             <div class="product-info">
                 <div class="product-title">Jogo de Lençol 400 Fios Micropercal Ponto Palito</div>
-                <a href="https://s.shopee.com.br/8fMp0TC1b3" target="_blank" class="buy-button">VER NA SHOPEE</a>
+                <a href="https://s.shopee.com.br/8fMp0TC1b3?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
             </div>
         </div>
 
+        <div class="product-card">
+            <img src="toalha.webp" alt="Panos Microfibra">
+            <div class="product-info">
+                <div class="product-title">Kit 10 Panos De Limpeza Microfibra Alta Absorção</div>
+                <a href="https://s.shopee.com.br/5fjDRUIz1m?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
         </div>
+
+        <div class="product-card">
+            <img src="fone.webp" alt="Fone Xiaomi">
+            <div class="product-info">
+                <div class="product-title">Fone De Ouvido Sem Fio Xiaomi Redmi Airdots 2</div>
+                <a href="https://s.shopee.com.br/4qA6S2FbBS?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="copo.webp" alt="Copo Térmico 1200ml">
+            <div class="product-info">
+                <div class="product-title">Copo Térmico Grande 1200ML Com Alça e Canudo</div>
+                <a href="https://s.shopee.com.br/2LSlTWIlWf?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="copo1.webp" alt="Copo Romantic Crown">
+            <div class="product-info">
+                <div class="product-title">ROMANTIC CROWN Copo Térmico Inox Portátil 1200ml</div>
+                <a href="https://s.shopee.com.br/8AQYQHmPSb?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="capa.webp" alt="Kit Lençol">
+            <div class="product-info">
+                <div class="product-title">Capa para Máquina de Lavar Impermeável Com Zíper</div>
+                <a href="https://s.shopee.com.br/6KyuN50FM8?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="mesa1.jpeg" alt="Mesa de Cabeceira">
+            <div class="product-info">
+                <div class="product-title">Mesa de Cabeceira Retro Nicho Decoração Palma</div>
+                <a href="https://s.shopee.com.br/8078EIRlZF?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="hidratei.webp" alt="Hidratei Spray">
+            <div class="product-info">
+                <div class="product-title">Hidratei Spray Leave in 250ml: Hidratação</div>
+                <a href="https://s.shopee.com.br/7AY1FfdBTa?share_channel_code=1" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="" alt="Título do Produto 9">
+            <div class="product-info">
+                <div class="product-title">Título do Produto 9</div>
+                <a href="#" target="_blank" class="buy-button">VER NA SHOPEE</a>
+            </div>
+        </div>
+    </div>
 
     <div class="help-section">
         <h3>🔍 Não encontrou o que procurava?</h3>
         <p>Me envie o produto que você deseja e eu encontro a melhor oferta para você!</p>
-        <a href="https://wa.me/5511912830301?text=Oi!+Vi+seu+site+de+achadinhos+e+gostaria+de+ajuda+para+encontrar+um+produto." class="whatsapp-btn-large" target="_blank">
+        <a href="https://wa.me/5511912830301?text=Oi!+Não+encontrei+o+que+procurava,+pode+me+ajudar?" class="whatsapp-btn-large" target="_blank">
             Chamar no WhatsApp
         </a>
     </div>
